@@ -792,7 +792,7 @@ hr.invis2 {
 }
 
 .feature-widget-left {
-    background-color: #B78B20;
+    background-color: #231F20;
     border-radius: 25px;
 }
 
@@ -815,7 +815,7 @@ hr.invis2 {
 }
 
 .feature-widget-right h3 {
-    color: #B78B20;
+    color: #231F20;
 }
 
 .feature-widget p{
@@ -2096,11 +2096,11 @@ SERVICES & CASE
 }
 
 .f-s-even{
-    background-color: #B78B20;
+    background-color: #231F20;
 }
 
 .f-s-odd{
-    background-color: #3d1a58;
+    background-color: #231F20;
 }
 
 .feature-seo h4 {
@@ -2110,11 +2110,11 @@ SERVICES & CASE
 }
 
 .f-s-even h4{
-    color: #3d1a58;
+    /* color: #3d1a58; */
 }
 
 .f-s-odd h4{
-    color: #B78B20;
+    color: #231F20;
 }
 
 .feature-seo i {
