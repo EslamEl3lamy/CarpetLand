@@ -2409,6 +2409,7 @@ html.no-csstransitions .home-content__main {
 
   .home-content__main {
     max-width: 490px;
+    margin: auto;
   }
 }
 
@@ -2466,6 +2467,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 400px) {
   .home-content__main {
     padding: 0 25px;
+    margin: auto;
   }
 
   .home-content {
