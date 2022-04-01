@@ -2067,7 +2067,7 @@ input::-moz-focus-inner {
   position: relative;
   max-width: 1400px;
   text-align: center;
-  /* margin-left: 14%; */
+  margin-left: 14%;
 }
 
 .home-content__button {
@@ -2372,6 +2372,7 @@ html.no-csstransitions .home-content__main {
 
   .home-content__main {
     max-width: 600px;
+    margin: auto;
   }
 
   .home-content__main h1 br {
