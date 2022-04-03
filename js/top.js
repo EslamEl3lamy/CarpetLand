@@ -16,3 +16,7 @@ function scrollFunction() {
 function topFunction() {
   $("html,body").animate({ scrollTop: '0' }, 1000);
 }
+// Slider
+$(document).ready(function() {
+  $('#slider').nivoSlider();
+});
