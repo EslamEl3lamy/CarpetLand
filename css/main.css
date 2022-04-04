@@ -2830,7 +2830,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-  padding-top: 11.2rem;
+  padding-top: 20.2rem;
   padding-bottom: 10.2rem;
   background-color: #ffffff;
   position: relative;
@@ -2853,6 +2853,8 @@ html.no-csstransitions .home-content__main {
   object-fit: cover;
 }
 
+
+
 @media (max-width:991px) {
   .s-works .d-flex .col {
     width: 100%;
@@ -2862,12 +2864,172 @@ html.no-csstransitions .home-content__main {
 
 .portfolio {
   margin-top: 9rem;
+  /* background-color: #80808030; */
+
 }
 
 .item-folio {
   position: relative;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+}
+
+.item-folio__thumb a {
+  display: block;
+    padding: 2px;
+    text-align: center;
+}
+
+.item-folio__thumb a::before {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.85);
+  content: "";
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.item-folio__thumb a::after {
+  z-index: 1;
+  content: "";
+  font-family: sans-serif;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.item-folio__thumb img {
+  vertical-align: bottom;
+  height: 190px;
+  border-radius: 1em;
+  box-shadow: 0px 0px 20px 0px #00000059;
+  width: 100%;
+}
+
+.item-folio__text {
+  padding: 0 3rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 3.6rem;
+  z-index: 2;
+  text-align: center;
+}
+
+.item-folio__title {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.item-folio__cat {
+  color: rgb(223 200 200 / 92%);
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+.item-folio__project-link {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000000;
+  background-color: #FFFFFF;
+  padding: .6rem 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  position: absolute;
+  bottom: 3.9rem;
+  left: 3rem;
+  z-index: 500;
+}
+
+.item-folio__project-link::before {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 3rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 50%;
+  left: -3rem;
+}
+
+.item-folio__project-link:hover,
+.item-folio__project-link:focus,
+.item-folio__project-link:active {
+  background-color: #B78B20;
+  color: #FFFFFF;
+}
+
+.item-folio__caption {
+  display: none;
+}
+.portfolio .brinton-services {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+}
+
+/* on hover */
+.item-folio:hover .item-folio__thumb a::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.item-folio:hover .item-folio__thumb a::after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.item-folio:hover .item-folio__project-link {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.item-folio:hover .item-folio__text {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .s-works .work-info h3 {
@@ -2878,16 +3040,48 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * works
  * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1400px) {
+ @media only screen and (max-width:1400px) {
   .item-folio__title {
     font-size: 1.7rem;
   }
+
+  .item-folio__cat {
+    font-size: 1.3rem;
+  }
+
 }
 
 @media only screen and (max-width: 1200px) {
   .s-works {
-    padding-top: 11.2rem;
+    padding-top: 20.2rem;
   }
+  .item-folio__title {
+    font-size: 1.8rem;
+  }
+
+  .item-folio__cat {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width:1000px) {
+  .item-folio__title {
+    font-size: 1.7rem;
+  }
+
+  .item-folio__cat {
+    font-size: 1.3rem;
+  }
+
+}
+@media only screen and (max-width:450px) {
+  .item-folio {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
 }
 
 /* ===================================================================
@@ -3772,4 +3966,40 @@ hr {
 hr#one {
   width: 65%;
   margin: 3em auto;
+}
+.client-page {
+  border: 0;
+  color: #ffffff;
+  background: #6D6E71;
+  background-image: url("../images/ImageFileHandler.jpeg");
+  background-size: cover;
+  /* background: linear-gradient(45deg, #6D6E71 1%, #ED1C24 100%);
+  background: -webkit-linear-gradient(45deg, #6D6E71 1%, #ED1C24 100%);
+  background: linear-gradient(45deg, #6D6E71 1%, #ED1C24 100%); */
+  height: 90vh;
+
+}
+.item-folio__thumb {
+  padding: 1em;
+  position: relative;
+}
+
+.brinton-services {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.brinton-services span {
+  cursor: pointer;
+  border: 1px solid;
+  padding: 2px 11px;
+  background: #000000;
+  color: #fff;
+  border-radius: 10px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.brinton-services span:hover {
+  background: #ed1c24;
 }

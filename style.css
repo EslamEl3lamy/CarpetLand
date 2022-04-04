@@ -266,8 +266,8 @@ HEADER
 ************************************/
 
 .site-header {
-    padding: 25px 0 30px;
-    background-color: #fff;
+    padding: 9px 0 16px;
+    /* background-color: #222222 !important; */
     box-sizing: border-box;
     color: #fff;
     transition: background-color 0.5s ease 0s;
@@ -403,9 +403,7 @@ HEADER
 .header-transparent.site-header {
     background-color: transparent;
 }
-/* .contactUs ..header-transparent.site-header {
-    background-color: #642525 !important;
-} */
+
 .colorfulheader .navbar-nav li a,
 .header-transparent .navbar-nav > li > a {
     color: #ffffff !important;
@@ -3674,11 +3672,11 @@ RESPONSIVE
 
 @font-face{
     font-family: "Montserrat", sans-serif;
-            src : url(font/BuanaRegular.ttf);
+            /* src : url(font/BuanaRegular.ttf); */
 }
 @font-face{
     font-family: "Montserrat", sans-serif;
-            src : url(font/ITCAvantGardeStd-XLt.otf);
+            /* src : url(font/ITCAvantGardeStd-XLt.otf); */
 }
 
 h1 , h2 , h3 , h4 {
