@@ -3675,6 +3675,21 @@ html.no-csstransitions .home-content__main {
     font-size: 1.8rem;
   }
 }
+@media only screen and (max-width: 900px) {
+  .s-contact .contact-num {
+    display: block;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .s-contact .contact-num {
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .s-contact .contact-num {
+    display: block;
+  }
+}
 
 /* ===================================================================
  * # footer
