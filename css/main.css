@@ -2557,6 +2557,15 @@ html.no-csstransitions .home-content__main {
   margin-top: 0;
   color: #ffffff;
 }
+.s-services .download a {
+  border: 1px solid #ed1c24;
+  padding: 15px;
+  background-color: #ed1c24;
+  color: #fff;
+}
+.s-services .download a:hover {
+  color: #e1d7d7;
+}
 
 .services-list {
   margin-top: 7.8rem;
@@ -3483,6 +3492,11 @@ html.no-csstransitions .home-content__main {
 
 .contact-list li {
   padding-left: 0;
+}
+.s-contact .contact-num {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* ------------------------------------------------------------------- 
