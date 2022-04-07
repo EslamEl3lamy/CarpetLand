@@ -2862,7 +2862,15 @@ html.no-csstransitions .home-content__main {
   object-fit: cover;
 }
 
-
+.s-works .download a {
+  border: 1px solid #ed1c24;
+  padding: 15px;
+  background-color: #ed1c24;
+  color: #fff;
+}
+.s-works .download a:hover {
+  color: #e1d7d7;
+}
 
 @media (max-width:991px) {
   .s-works .d-flex .col {
@@ -3498,6 +3506,15 @@ html.no-csstransitions .home-content__main {
   justify-content: space-evenly;
   align-items: center;
 }
+.s-contact  .download a {
+  border: 1px solid #ed1c24;
+  padding: 15px;
+  background-color: #ed1c24;
+  color: #fff;
+}
+.s-contact  .download a:hover {
+  color: #e1d7d7;
+}
 
 /* ------------------------------------------------------------------- 
  * ## contact button
@@ -3926,7 +3943,7 @@ footer a:visited {
 }
 
 /* Slider */
-#slider {
+#slider ,#slider1,#slider2 {
   /* position: relative; */
   /* overflow: hidden; */
   margin: 20px auto 0 auto;
@@ -3962,7 +3979,7 @@ a.control_next {
   cursor: pointer;
 }
 @media only screen and (max-width: 900px) {
-  #slider {
+  #slider, #slider1 ,#slider2 {
     height: 30vh;
   }
 }

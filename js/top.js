@@ -18,5 +18,5 @@ function topFunction() {
 }
 // Slider
 $(document).ready(function() {
-  $('#slider').nivoSlider();
+  $('#slider ,#slider1 ,#slider2').nivoSlider();
 });
