@@ -1460,7 +1460,7 @@ input::-moz-focus-inner {
 
 .subhead {
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 2.4rem;
   line-height: 1.333;
   text-transform: uppercase;
@@ -1484,13 +1484,13 @@ input::-moz-focus-inner {
   position: relative;
 }
 
-.subhead::before {
+/* .subhead::before {
   content: attr(data-num) ".";
   padding-right: 72px;
   font-weight: 700;
-}
+} */
 
-.subhead::after {
+/* .subhead::after {
   content: "";
   display: block;
   background-color: #231f20;
@@ -1500,7 +1500,7 @@ input::-moz-focus-inner {
   position: absolute;
   top: 50%;
   left: 4rem;
-}
+} */
 
 .subhead1::after {
   content: "";
@@ -1644,8 +1644,7 @@ input::-moz-focus-inner {
   }
 
   .subhead {
-    font-size: 1.4rem;
-  }
+    font-size: 2.4rem;  }
 
   .subhead::before {
     padding-right: 45px;
@@ -2132,7 +2131,7 @@ input::-moz-focus-inner {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   position: absolute;
-  top: 9rem;
+  top: 17rem;
   right: 6.2rem;
   z-index: 500;
 }
@@ -2316,10 +2315,12 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 1200px) {
   .home-content h1 {
     font-size: 5.6rem;
+    text-align: center;
   }
 
   .home-content__main {
     padding-right: 6rem;
+    text-align: center;
   }
 
   .home-content__button,
@@ -2549,9 +2550,9 @@ html.no-csstransitions .home-content__main {
   opacity: 0.65;
 }
 
-.s-services .lead {
+/* .s-services .lead {
   text-shadow: 1px 1px #fff;
-}
+} */
 
 .s-services h4 {
   margin-top: 0;
@@ -4051,7 +4052,7 @@ footer a:visited {
   opacity: 1;
 }
 
-.cl-go-top::before {
+/* .cl-go-top::before {
   content: "";
   display: block;
   width: 1px;
@@ -4082,7 +4083,7 @@ footer a:visited {
   position: absolute;
   left: calc(30px + 15px);
   top: -165px;
-}
+} */
 
 /* ------------------------------------------------------------------- 
  * WhatsApp
@@ -4112,7 +4113,7 @@ footer a:visited {
 .whats img {
   width: 28%;
   height: 100%;
-  border-radius: 6px;
+  border-radius: 26px;
 }
 
 /* ------------------------------------------------------------------- 
@@ -4222,6 +4223,8 @@ footer a:visited {
 
 .nivoSlider img {
   max-height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 a.control_prev,
