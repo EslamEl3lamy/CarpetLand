@@ -1520,7 +1520,7 @@ input::-moz-focus-inner {
 
 .section-header .display-1,
 .section-header p.lead {
-  padding-left: 9.6rem;
+  /* padding-left: 9.6rem; */
   padding-right: 2rem;
 }
 
