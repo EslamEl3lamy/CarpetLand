@@ -97,6 +97,10 @@
 .nivo-prevNav {
 	left:0px;
 }
+.nivo-prevNav i ,.nivo-nextNav i {
+	padding: 10px;
+	font-size: 20px;
+}
 .nivo-nextNav {
 	right:0px;
 }
