@@ -20,4 +20,4 @@ function topFunction() {
 $(document).ready(function() {
   $('#slider ,#slider1 ,#slider2').nivoSlider();
 });
-document.body.insertBefore("eslam","docum");
+// document.body.insertBefore("eslam","docum");
