@@ -1612,6 +1612,7 @@ input::-moz-focus-inner {
   .section-header .display-1,
   .section-header p.lead {
     padding-right: 0;
+    text-align: center;
   }
 }
 
@@ -1644,7 +1645,8 @@ input::-moz-focus-inner {
   }
 
   .subhead {
-    font-size: 2.4rem;  }
+    font-size: 2.4rem;
+  }
 
   .subhead::before {
     padding-right: 45px;
@@ -1668,10 +1670,10 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .s-header {
   width: 100%;
-  height: 72px;
+  height: 80px;
   background-color: transparent;
   position: absolute;
-  top: 4.2rem;
+  top: 0.2rem;
   z-index: 999999999;
 }
 
@@ -1700,6 +1702,8 @@ input::-moz-focus-inner {
   top: 0;
   background-color: #1f181a !important;
   opacity: 0;
+  left: 0;
+  right: 0;
   visibility: hidden;
   z-index: 600;
 }
@@ -1721,6 +1725,12 @@ input::-moz-focus-inner {
 .s-header.sticky.scrolling {
   opacity: 1;
   visibility: visible;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 991px) {
+  .header-nav-wrap {
+    font-size: 10px;
+  }
 }
 
 /* -------------------------------------------------------------------
@@ -1752,6 +1762,7 @@ input::-moz-focus-inner {
   height: 45px; */
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  margin-top: 13px;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1870,7 +1881,7 @@ input::-moz-focus-inner {
   letter-spacing: 0.3rem;
   position: absolute;
   top: 0;
-  left: 200px;
+  right: 0;
 }
 
 .header-nav {
@@ -1901,7 +1912,7 @@ input::-moz-focus-inner {
  * responsive:
  * header
  * ------------------------------------------------------------------- */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 991px) {
   .s-header {
     top: 0;
   }
@@ -1922,6 +1933,7 @@ input::-moz-focus-inner {
   .header-logo img {
     width: 120px;
     height: 60px;
+    margin-top: 0;
   }
 
   .s-header.sticky .header-logo {
@@ -1997,7 +2009,7 @@ input::-moz-focus-inner {
 /* -------------------------------------------------------------------
  * make sure the menu is visible on larger screens
  * ------------------------------------------------------------------- */
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 991px) {
   .header-nav-wrap {
     display: block !important;
   }
@@ -2066,11 +2078,12 @@ input::-moz-focus-inner {
 }
 
 .home-content__main {
-  padding-right: 28rem;
+  /* padding-right: 28rem; */
   position: relative;
   max-width: 1400px;
   text-align: center;
   margin-left: 14%;
+  margin: auto;
 }
 
 .home-content__button {
@@ -2306,6 +2319,18 @@ html.no-csstransitions .home-content__main {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .home-content {
+    height: 85vh;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .home-content {
+    height: 78vh;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .home-content h1 {
     font-size: 6rem;
@@ -2319,7 +2344,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content__main {
-    padding-right: 6rem;
+    /* padding-right: 6rem; */
     text-align: center;
   }
 
@@ -2539,7 +2564,7 @@ html.no-csstransitions .home-content__main {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.s-services::before {
+/* .s-services::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2547,8 +2572,8 @@ html.no-csstransitions .home-content__main {
   width: 100%;
   height: 100%;
   /* background-color: #151515; */
-  opacity: 0.65;
-}
+/* opacity: 0.65; */
+/* } */
 
 /* .s-services .lead {
   text-shadow: 1px 1px #fff;
@@ -2739,11 +2764,13 @@ html.no-csstransitions .home-content__main {
     width: 100%;
     text-align: center;
   }
+
   .about-process .panel h3 {
     margin: auto;
     text-align: center;
     line-height: 40px;
   }
+
   .about-process .panel p {
     margin: auto;
     text-align: center;
@@ -2758,19 +2785,22 @@ html.no-csstransitions .home-content__main {
     width: 100%;
     font-size: 15px;
     text-align: center;
-    
+
   }
+
   .about-process .panel h3 {
     margin: auto;
     text-align: center;
     line-height: 40px;
   }
+
   .about-process .panel p {
     margin: auto;
     text-align: center;
     padding-top: 20px;
   }
 }
+
 @media only screen and (max-width: 700px) {
   .about-process .panel {
     font-size: 2rem;
@@ -2779,18 +2809,21 @@ html.no-csstransitions .home-content__main {
     font-size: 15px;
     text-align: center;
   }
+
   .about-process .panel h3 {
     margin: auto;
     text-align: center;
     line-height: 40px;
 
   }
+
   .about-process .panel p {
     margin: auto;
     text-align: center;
     padding-top: 20px;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .about-process .panel {
     font-size: 2rem;
@@ -2800,11 +2833,13 @@ html.no-csstransitions .home-content__main {
     text-align: center;
 
   }
+
   .about-process .panel h3 {
     margin: auto;
     text-align: center;
     line-height: 40px;
   }
+
   .about-process .panel p {
     margin: auto;
     text-align: center;
@@ -3129,7 +3164,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .portfolio {
-  margin-top: 9rem;
+  margin-top: 2rem;
   /* background-color: #80808030; */
 
 }
